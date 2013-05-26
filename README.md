@@ -17,14 +17,14 @@
 
 ### `Model(object)`
 
-Create a new model which wraps around `object`.
+  Create a new model which wraps around `object`.
 
 ```js
 var Model = require('model');
 var foo = Model({ foo: 'bar' });
 ```
 
-### `.get(key):*` <br /> `.get(array):Object`
+### `.get(key):**` <br /> `.get(array):Object`
 
   Gets one or more values.
 
