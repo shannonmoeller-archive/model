@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <title>Model</title>
+
+        <link rel="stylesheet" href="../build/build.css" />
+    </head>
+    <body>
+        <div id="mocha"></div>
+        <canvas id="test" height="200" width="200"></canvas>
+
+        <script src="../build/build.js"></script>
+        <script>
+            require('visionmedia-mocha');
+            mocha.setup('bdd');
+        </script>
+        <script src="test.model.js"></script>
+        <script>
+            mocha.checkLeaks();
+            mocha.run();
+        </script>
+    </body>
+</html>
