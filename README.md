@@ -18,8 +18,7 @@ var Model = require('model');
 var foo = Model({ foo: 'bar' });
 ```
 
-### .get(key):*
-### .get(array):Object
+### .get(key):\* <br /> .get(array):Object
 
   Gets one or more values.
 
@@ -32,8 +31,7 @@ foo.get('c');             // undefined
 foo.get(['a', 'b', 'c']); // { a: 1, b: 2, c: undefined }
 ```
 
-### .set(key, value):Model
-### .set(object):Model
+### .set(key, value):this <br /> .set(object):this
 
   Sets one or more values.
 

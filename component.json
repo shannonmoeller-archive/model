@@ -10,6 +10,6 @@
     "chaijs/chai": "*",
     "visionmedia/mocha": "*"
   },
-  "main": "index.js",
-  "scripts": ["index.js"]
+  "main": "lib/modal.js",
+  "scripts": ["lib/modal.js"]
 }
