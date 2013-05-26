@@ -24,7 +24,7 @@ var Model = require('model');
 var foo = Model({ foo: 'bar' });
 ```
 
-### `.get(key):\*` <br /> `.get(array):Object`
+### `.get(key):*` <br /> `.get(array):Object`
 
   Gets one or more values.
 
