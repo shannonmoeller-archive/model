@@ -5,7 +5,9 @@
 
 ## Installation
 
-    $ component install shannonmoeller/model
+    $ npm install shannonmoeller-model
+
+    $ component install shannonmoeller/model.js
 
 ## API
 

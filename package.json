@@ -8,5 +8,6 @@
   "dependencies": {},
   "devDependencies": {
       "workit": "*"
-  }
+  },
+  "main": "lib/model.js"
 }
