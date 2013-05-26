@@ -5,7 +5,11 @@
 
 ## Installation
 
+  Server-side ([Node.js](http://nodejs.org)):
+
     $ npm install shannonmoeller/model.js
+
+  Client-side ([component(1)](https://github.com/component)):
 
     $ component install shannonmoeller/model.js
 
