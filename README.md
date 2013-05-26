@@ -15,7 +15,7 @@
 
 ## API
 
-### Model(object)
+### `Model(object)`
 
 Create a new model which wraps around `object`.
 
@@ -24,7 +24,7 @@ var Model = require('model');
 var foo = Model({ foo: 'bar' });
 ```
 
-### .get(key):\* <br /> .get(array):Object
+### `.get(key):\*` <br /> `.get(array):Object`
 
   Gets one or more values.
 
@@ -37,7 +37,7 @@ foo.get('c');             // undefined
 foo.get(['a', 'b', 'c']); // { a: 1, b: 2, c: undefined }
 ```
 
-### .set(key, value):this <br /> .set(object):this
+### `.set(key, value):this` <br /> `.set(object):this`
 
   Sets one or more values.
 
@@ -57,7 +57,7 @@ foo.toJSON(); // { a: 1, b: 3, c: 4 }
 
 ```
 
-### .toJSON()
+### `.toJSON()`
 
   Returns the current state of the internal data as a plain object.
 
