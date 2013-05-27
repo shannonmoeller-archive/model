@@ -3,7 +3,7 @@
 'use strict';
 
 var chai = require('chai');
-var Model = require(require.alias ? 'model' : '../lib/model');
+var Model = require('../lib/model');
 
 describe('Model', function () {
     it('should wrap an object', function () {

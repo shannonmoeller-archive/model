@@ -9,6 +9,7 @@
         <div id="mocha"></div>
         <script src="../build/build.js"></script>
         <script>
+            require.alias('model/lib/model.js', '../lib/model/index.js');
             require('visionmedia-mocha');
             mocha.setup('bdd');
         </script>
