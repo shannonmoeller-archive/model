@@ -1,7 +1,8 @@
-
-# Model.js
+# Model.js [![Build Status](https://travis-ci.org/shannonmoeller/model.js.png)](https://travis-ci.org/shannonmoeller/model.js)
 
   A basic JavaScript model.
+  
+  [![browser support](http://ci.testling.com/shannonmoeller/model.js.png)](http://ci.testling.com/shannonmoeller/model.js)
 
 ## Installation
 
