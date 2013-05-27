@@ -1,15 +1,18 @@
 REPORTER := spec
 
 build: components index.js
-	@component build --dev
+	@./node_modules/.bin/component build --dev
 
-components: component.json
-	@component install --dev
+components: node_modules component.json
+	@./node_modules/.bin/component install --dev
+
+node_modules: package.json
+	@npm install -d
 
 clean:
 	@rm -fr build components node_modules
 
 test: build
-	@mocha -R spec test/**.js
+	@./node_modules/.bin/mocha -R spec test/**.js
 
 .PHONY: clean test
