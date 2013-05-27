@@ -1,6 +1,7 @@
 REPORTER := spec
+TESTS := test/{,**/}*.js
 
-build: components index.js
+build: components lib/model.js
 	@./node_modules/.bin/component build --dev
 
 components: node_modules component.json
@@ -13,6 +14,6 @@ clean:
 	@rm -fr build components node_modules
 
 test: build
-	@./node_modules/.bin/mocha -R spec test/{,**/}*.js
+	@./node_modules/.bin/mocha -R $(REPORTER) $(TESTS)
 
 .PHONY: clean test
