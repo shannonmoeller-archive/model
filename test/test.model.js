@@ -1,9 +1,7 @@
 /*global describe, it */
 /*jshint indent:4, newcap:false, node:true */
-'use strict';
-
-var chai = require('chaijs-chai');
-var Model = require('model');
+var chai = require('chai');
+var Model = require('../');
 
 describe('Model', function () {
     it('should wrap an object', function () {

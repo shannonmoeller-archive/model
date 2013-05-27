@@ -6,10 +6,8 @@
   "license": "MIT",
   "repo": "shannonmoeller/model.js",
   "dependencies": {},
-  "development": {
-    "chaijs/chai": "*",
-    "visionmedia/mocha": "*"
-  },
-  "main": "lib/modal.js",
-  "scripts": ["lib/modal.js"]
+  "scripts": [
+    "index.js",
+    "lib/model.js"
+  ]
 }

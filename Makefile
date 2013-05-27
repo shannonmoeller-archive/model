@@ -1,17 +1,15 @@
+REPORTER := spec
 
-build: components lib/*.js
+build: components index.js
 	@component build --dev
 
 components: component.json
 	@component install --dev
 
-docs:
-	@doxit -t Model.js -I README.md *.{md,js}
-
 clean:
-	rm -fr build components docs
+	@rm -fr build components node_modules
 
-test:
-	rm -rf build && make build && workit .
+test: build
+	@mocha -R spec test/**.js
 
 .PHONY: clean test
