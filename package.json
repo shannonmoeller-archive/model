@@ -5,18 +5,18 @@
   "keywords": ["collection", "model", "mvc"],
   "license": "MIT",
   "repository": "shannonmoeller/model.js",
-  "main": "index",
   "devDependencies": {
     "chai": "*",
     "component": "*",
     "mocha": "*"
   },
+  "main": "lib/model",
   "scripts": {
     "test": "make test"
   },
   "testling": {
     "harness" : "mocha",
-    "files": "test/**.js",
+    "files": "test/{,**/}*.js",
     "browsers": [
       "ie/6..latest",
       "chrome/20..latest",

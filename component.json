@@ -5,7 +5,11 @@
   "keywords": ["collection", "model", "mvc"],
   "license": "MIT",
   "repo": "shannonmoeller/model.js",
-  "dependencies": {},
+  "development": {
+    "chaijs/chai": "*",
+    "visionmedia/mocha": "*"
+  },
+  "main": "lib/model.js",
   "scripts": [
     "index.js",
     "lib/model.js"

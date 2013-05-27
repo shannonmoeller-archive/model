@@ -13,6 +13,6 @@ clean:
 	@rm -fr build components node_modules
 
 test: build
-	@./node_modules/.bin/mocha -R spec test/**.js
+	@./node_modules/.bin/mocha -R spec test/{,**/}*.js
 
 .PHONY: clean test
