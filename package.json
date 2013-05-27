@@ -18,17 +18,12 @@
     "harness" : "mocha",
     "files": "test/{,**/}*.js",
     "browsers": [
-      "ie/6..latest",
-      "chrome/20..latest",
-      "chrome/canary",
-      "firefox/10..latest",
-      "firefox/nightly",
-      "safari/4..latest",
-      "opera/10.0..latest",
-      "opera/next",
-      "iphone/5..latest",
-      "ipad/5..latest",
-      "android-browser/2..latest"
+      "iexplore/7.0", "iexplore/8.0", "iexplore/9.0", "iexplore/10.0",
+      "chrome/22.0", "chrome/23.0", "chrome/24.0", "chrome/25.0", "chrome/canary",
+      "firefox/16.0", "firefox/17.0", "firefox/18.0", "firefox/19.0", "firefox/nightly",
+      "safari/4.0", "safari/5.0.5", "safari/5.1", "safari/6.0",
+      "opera/11.0", "opera/11.5", "opera/11.6", "opera/12.0", "opera/next",
+      "iphone/6.0", "ipad/6.0", "android-browser/4.2"
     ]
   }
 }
