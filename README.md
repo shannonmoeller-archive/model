@@ -1,14 +1,14 @@
 # Model.js [![Build Status](https://travis-ci.org/shannonmoeller/model.js.png)](https://travis-ci.org/shannonmoeller/model.js)
 
-  A basic JavaScript model.
+> A basic JavaScript model.
 
 ## Installation
 
-  Server-side ([Node.js](http://nodejs.org)):
+Server-side ([Node.js](http://nodejs.org)):
 
     $ npm install shannonmoeller/model.js
 
-  Client-side ([component(1)](https://github.com/component)):
+Client-side ([component(1)](https://github.com/component)):
 
     $ component install shannonmoeller/model.js
 
@@ -16,16 +16,16 @@
 
 ### `Model(object)`
 
-  Create a new model which wraps around `object`.
+Create a new model which wraps around `object`. Context is enforced. Calling `new Model`, `Model.apply`, and `Model.call` will not affect the value of `this` in the constructor.
 
 ```js
 var Model = require('model');
 var foo = Model({ foo: 'bar' });
 ```
 
-### `.get(key):**` <br /> `.get(array):Object`
+### `.get(key):Any` <br /> `.get(array):Object`
 
-  Gets one or more values.
+Gets one or more values.
 
 ```js
 var foo = Model({ a: 1, b: 2 });
@@ -38,7 +38,7 @@ foo.get(['a', 'b', 'c']); // { a: 1, b: 2, c: undefined }
 
 ### `.set(key, value):this` <br /> `.set(object):this`
 
-  Sets one or more values.
+Sets one or more values.
 
 ```js
 var foo = Model();
@@ -58,7 +58,7 @@ foo.toJSON(); // { a: 1, b: 3, c: 4 }
 
 ### `.toJSON()`
 
-  Returns the current state of the internal data as a plain object.
+Returns the current state of the internal data as a plain object.
 
 ```js
 var foo = Model({ a: 1, b: 2, c: 3 });
@@ -71,9 +71,9 @@ foo.toJSON(); // { a: 1, b: 2, c: 3 }
 ```sh
 $ npm test
 ```
-  
-  [![browser support](http://ci.testling.com/shannonmoeller/model.js.png)](http://ci.testling.com/shannonmoeller/model.js)
+
+[![browser support](http://ci.testling.com/shannonmoeller/model.js.png)](http://ci.testling.com/shannonmoeller/model.js)
 
 ## License
 
-  MIT
+MIT
